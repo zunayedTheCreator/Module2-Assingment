@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 1</title>
+</head>
+<body>
+  <button id="changeContentButton">Change Content</button>
+  <div id="contentDiv">
+    <h4>Hi! Welcome sir. Click the button to see a image.😊</h4>
+  </div>
+
+  <script>
+
+const button = document.getElementById('changeContentButton');
+const contentDiv = document.getElementById('contentDiv');
+const displayImage = document.getElementById('displayImage');
+
+button.addEventListener('click', () => {
+  contentDiv.innerHTML = '<img src="https://shorturl.at/hjzT2" alt="New Image" height="400" width="700">';
+});
+
+  </script>
+
+</body>
+</html>

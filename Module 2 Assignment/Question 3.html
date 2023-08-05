@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+<body>
+    <h1>Image Switcher</h1>
+    <img id="image" alt="Image 1" width="400" height="300">
+    <br>
+    <button id="button1">Switch to Image 1</button>
+    <button id="button2">Switch to Image 2</button>
+
+    <script>
+        const imageElement = document.getElementById('image');
+        const button1 = document.getElementById('button1');
+        const button2 = document.getElementById('button2');
+
+        // Function to change the image source to "image1.jpg"
+        button1.addEventListener('click', () => {
+            imageElement.src = 'https://firmbee.com/wp-content/uploads/foto_1200x900-kopia-900x675.png';
+            imageElement.alt = 'Image 1';
+        });
+
+        // Function to change the image source to "image2.jpg"
+        button2.addEventListener('click', () => {
+            imageElement.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDjt3qpt5375qhkJCBq3VpFGVPHTCTXRr97tIHnc57z_bJr6UixKo2_Orq_bURA7bRQNA&usqp=CAU';
+            imageElement.alt = 'Image 2';
+        });
+    </script>
+</body>
+</html>
